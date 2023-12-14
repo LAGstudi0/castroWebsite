@@ -7,16 +7,24 @@
 html, body {
     margin: 0;
     box-sizing: border-box;
-    font-family:"Calibri", sans-serif;
+    font-family: "Calibri", sans-serif;
+
 }
 
 
 
-@media only screen and (max-width: 786px) {
 
+
+
+@media only screen and (max-width: 736px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    
     main {
         color: white;
         height: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         background-image: url('images/main_image.png');
@@ -339,30 +347,28 @@ html, body {
         width: 10rem;
     }
 
+    
+
 }
 
 
 
+@media only screen and (min-width: 736px) {
 
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 786px) {
+    .lil-rightside img {
+        display: none;
+    }
 
     main {
         color: white;
-        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         background-image: url('images/main_image.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top -150px;    
+        /* background-position: center top -150px;     */
     }
 
     .nav-menu-phone {
@@ -408,7 +414,7 @@ html, body {
     .logo {
         display: flex;
         flex-direction: column;
-    
+        text-wrap: nowrap;
     }
     
     .logo-content {
@@ -680,20 +686,28 @@ html, body {
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 70vh;
+        height: 100%;
         background-color: var(--secondary-color);
     
     
     }
     
-    .lil-rightside img {
-        height: 70vh;
+    .lil-rightside{
+        background-image: url(images/castro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50vw;
+        /* height: auto;
+        max-width: 100%; 
+        display: block;  */
+       
     }
     
     .lil-leftside h3 {
         text-align: center;
     }
     .lil-leftside {
+        width: 50vw;
         margin: 2rem;
         line-height: 2rem;
     }
