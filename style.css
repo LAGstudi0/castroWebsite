@@ -1,7 +1,7 @@
 :root {
     --primary-color:#219C90;
     --secondary-color:#d86b27;
-    --third-color:var(--primary-color)
+    --third-color: #c26124;
 }
 
 html, body {
@@ -20,6 +20,30 @@ html, body {
     width: 10rem;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* display: flex; */
+    transition: 0.6s;
+}
+
+header.sticky {
+    z-index: 3;
+    padding: 5px 0;
+    background: var(--third-color);
+    color: black;
+}
+
+header.sticky li a {
+    color: black;
+}
+
+header.sticky .bar {
+    background-color: black;
+}
+
 
 
 
@@ -36,9 +60,9 @@ html, body {
         display: flex;
         flex-direction: column;
         background-image: url('images/main_image.png');
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
-        background-position: center left -450px;
+        background-position: center left -650px;
     }
     
     .left-nav {
@@ -415,9 +439,9 @@ html, body {
         display: flex;
         flex-direction: column;
         background-image: url('images/main_image.png');
-        background-size: cover;
+        background-size:auto;
         background-repeat: no-repeat;
-        /* background-position: center top -150px;     */
+        background-position: center top -150px;        
     }
 
     .nav-menu-phone {
@@ -504,6 +528,7 @@ html, body {
     
     .rightSide h2 {
         font-size: 4rem;
+        width: 38rem;
         text-wrap: wrap;
     }
     
@@ -626,7 +651,7 @@ html, body {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 30vh;
+        height: auto;
         font-weight: bold;
         line-height: 1.2rem;
     }
@@ -693,7 +718,7 @@ html, body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 60vh;
+        height: 100%;
         /* background-color: rgb(229, 208, 22); */
     }
     a {
@@ -709,7 +734,7 @@ html, body {
         text-align: center;
         display: flex;
         justify-content: space-evenly;
-    
+        width: 100%;
     
     }
     
@@ -738,11 +763,13 @@ html, body {
     }
     
     .info-catering {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         text-align: center;
         justify-content: center;
+
     }
     
     .lil-about-us {
@@ -797,4 +824,31 @@ html, body {
 .footer-social-logo {
     height: 2rem;
     width: 2rem;
+}
+
+.up-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-container:hover {
+    background-color: rgba(255, 255, 255, 0.065);
+    border-radius: 50%;
+
+}
+
+.up-btn {
+
+    border: none;
+    background-color: transparent;
+}
+
+.up-btn img {
+    filter: brightness(0) invert(1);
 }
