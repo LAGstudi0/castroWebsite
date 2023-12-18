@@ -1,13 +1,22 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu-phone')
+const aboutUsBtn = document.querySelector('.button');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-
+    // window.document.body.style.overflow === 'hidden' ? window.document.body.style.overflow = 'auto' : window.document.body.style.overflow = 'hidden'
 })
 
+aboutUsBtn.addEventListener('click', function (event) {
+    event.preventDefault();
 
+    // Smooth scroll to the top of the page
+    window.scrollTo({
+        top: document.getElementById('aboutUs').offsetTop - 100, // Replace with the actual ID of the target element
+        behavior: 'smooth'
+    });
+});
 
 
 
@@ -89,5 +98,5 @@ document.body.appendChild(element);
 // this is for the top nav
 window.addEventListener('scroll', () => {
     var header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 500);
+    header.classList.toggle('sticky', window.scrollY > 1);
 });
