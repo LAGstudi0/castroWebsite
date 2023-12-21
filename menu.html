@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header class="top-nav">
@@ -17,12 +17,8 @@
                 </ul>
             </div>
             <a href="index.html" class="logo">
-                <div class="logo-title">
-                    <h1>CASTRO'S CAFETERIA</h1>
-                </div>
-                <div class="logo-content">
-                    <span>BUTTIES</span><span>TAPAS</span><span>COFFE</span><span>BEER</span>
-                </div>
+                <img src="images/castroLogo.png" alt="">
+
             </a>
             <div class="right-nav">
                 <div class="top-right-nav">
@@ -49,6 +45,22 @@
     </header>
 
     <div class="menu-section">
+        <style>
+
+            .nav-items li a:hover {
+                color:black;
+                }
+
+            .menu-section {
+                padding-top: 4rem;
+            }
+
+            @media only screen and (max-width: 736px) {
+                .menu-section {
+                    padding-top: 1rem;
+                }
+            }
+        </style>
         <div class="butties">
             <div class="title">
                 <h2>BOCADILLOS - BUTTIES</h2>
@@ -259,7 +271,8 @@
         <div class="main-footer-content">
                     <div class="footer-left-side">
                         <div class="footer-title">
-                            <h2>CASTRO'S CAFETERIA</h2>
+                            <img class="footer-logo" src="images/castroLogoWhite.png" alt="">
+
                         </div>
                             <!-- <ul>
                                 <li>Menu</li>

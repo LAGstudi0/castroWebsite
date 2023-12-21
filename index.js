@@ -2,9 +2,24 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu-phone')
 const aboutUsBtn = document.querySelector('.button');
 
+var isScrollDisabled = false;
+
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+
+
+    if (isScrollDisabled) {
+        // Enable scrolling
+        document.body.style.overflow = 'auto';
+    } else {
+        // Disable scrolling
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Toggle the scroll state
+    isScrollDisabled = !isScrollDisabled;
     // window.document.body.style.overflow === 'hidden' ? window.document.body.style.overflow = 'auto' : window.document.body.style.overflow = 'hidden'
 })
 
@@ -98,5 +113,8 @@ document.body.appendChild(element);
 // this is for the top nav
 window.addEventListener('scroll', () => {
     var header = document.querySelector('header');
+
+    // var logo = document.querySelector('.castro-mainLogo');
+    // logo.src = 'images/castroLogoWhite.png';
     header.classList.toggle('sticky', window.scrollY > 1);
 });

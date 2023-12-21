@@ -11,6 +11,18 @@ html, body {
 
 }
 
+.location-info a span{
+    text-decoration: none;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
 .info-section {
     align-items: center;
 }
@@ -18,6 +30,10 @@ html, body {
 
 .info-catering {
     width: 10rem;
+}
+
+.extras {
+    padding-bottom: 2rem;
 }
 
 header {
@@ -54,7 +70,9 @@ header.sticky li a{
     width: 5rem;
 }
 
-
+.footer-logo {
+    width: 15rem;
+}
 .title {
     --text-divider-gap: 1rem;
     display: flex;
@@ -82,7 +100,7 @@ header.sticky li a{
 
 @media only screen and (max-width: 736px) {
     body, html {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     
     main {
@@ -192,7 +210,7 @@ header.sticky li a{
     
     .nav-menu-phone.active {
         left: 0;
-        overflow:hidden;
+
     }
 
 
@@ -220,9 +238,16 @@ header.sticky li a{
         background-color: var(--secondary-color);
 
     }
+
+    .lil-rightside {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .lil-rightside img {
-        width: 100vw;
+        width: 80%;
     }
     
     .lil-leftside {
@@ -292,10 +317,14 @@ header.sticky li a{
         align-items: center;
     }
     
+    .column {
+        margin: -1.5rem;
+    }
+
     .tapas-cell {
         width: 15rem;
-        height: 6rem;
-        margin: 2rem;
+        /* height: 6rem; */
+        margin: 1rem;
         display: flex; 
         flex-direction: column;
         justify-content: center;
@@ -441,7 +470,8 @@ header.sticky li a{
     }
 
     .footer-left-side {
-
+        align-items: center;
+        gap: 1rem;
         margin-left: 1rem;
     }
 
@@ -506,7 +536,7 @@ header.sticky li a{
 
     .nav-items {
         display: flex;
-        gap: 10px;
+        gap: 20px;
     }
 
     .nav-items li {
@@ -583,6 +613,7 @@ header.sticky li a{
     
     .menu-section {
         background-color: var(--primary-color);
+        /* padding-top: 4rem; */
     }
     
     .title {
@@ -833,14 +864,21 @@ header.sticky li a{
     }
     
     .lil-rightside{
-        background-image: url(images/castro.jpg);
+        /* background-image: url(images/castro.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* height: auto;
         max-width: 100%; 
         display: block;  */
-       
+    }
+
+    .lil-rightside img {
+        display: flex;
+        width: 80%;
     }
     
     .lil-leftside h3 {
@@ -904,4 +942,15 @@ header.sticky li a{
 
 .up-btn img {
     filter: brightness(0) invert(1);
+}
+
+
+.footer-social-media {
+    padding-right: 2rem;
+}
+
+.footer-social-media img {
+    height: 2rem;
+    width: 2rem;
+
 }
