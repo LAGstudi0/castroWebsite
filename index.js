@@ -10,16 +10,16 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 
 
-    if (isScrollDisabled) {
-        // Enable scrolling
-        document.body.style.overflow = 'auto';
-    } else {
-        // Disable scrolling
-        document.body.style.overflow = 'hidden';
-    }
+    // if (isScrollDisabled) {
+    //     Enable scrolling
+    //     document.body.style.overflow = 'auto';
+    // } else {
+    //     Disable scrolling
+    //     document.body.style.overflow = 'hidden';
+    // }
 
     // Toggle the scroll state
-    isScrollDisabled = !isScrollDisabled;
+    // isScrollDisabled = !isScrollDisabled;
     // window.document.body.style.overflow === 'hidden' ? window.document.body.style.overflow = 'auto' : window.document.body.style.overflow = 'hidden'
 })
 
