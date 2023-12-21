@@ -100,9 +100,11 @@ header.sticky li a{
 
 @media only screen and (max-width: 736px) {
     body, html {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
-    
+    .info-cell a img {
+        width: 100%;
+    }
     main {
         color: white;
         height: 100vh;
@@ -113,6 +115,7 @@ header.sticky li a{
         background-size: auto;
         background-repeat: no-repeat;
         background-position: center left -650px;
+
     }
     
     .left-nav {
@@ -460,8 +463,9 @@ header.sticky li a{
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .footer-left-side, .footer-right-side {
@@ -476,7 +480,7 @@ header.sticky li a{
     }
 
     .footer-right-side {
-        margin-top: 3rem;   
+        /* margin-top: 3rem;    */
         justify-content: center;
         align-items: center;
     }
@@ -730,7 +734,7 @@ header.sticky li a{
         color: white;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         height: auto;
         font-weight: bold;
         line-height: 1.2rem;
@@ -946,11 +950,11 @@ header.sticky li a{
 
 
 .footer-social-media {
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
 }
 
 .footer-social-media img {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 
 }
