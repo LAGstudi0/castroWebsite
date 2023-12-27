@@ -1,0 +1,26 @@
+:root {
+    --primary-color:#219C90;
+    --secondary-color:#d86b27;
+    --third-color: #c26124;
+}
+
+body {
+    background-color: var(--secondary-color);
+
+}
+
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+

@@ -354,6 +354,14 @@ header.sticky li a{
         justify-content: center;
         align-items: center;
     }
+
+    .last {
+        margin-bottom: -3rem;
+    }
+
+    .moreScran-cell.last {
+        margin-bottom: -0.5rem;
+    }
     
     .tapas-title {
         text-wrap: wrap;
@@ -439,8 +447,6 @@ header.sticky li a{
     .info-cell a img{
         margin: 2rem;
         width: 80vw;
-
-
     }
     
     .location-info {
@@ -928,6 +934,11 @@ header.sticky li a{
 
     .footer-right-side.phone {
         display: none;
+    }
+
+    .info-cell a img{
+        margin: 2rem;
+        width: 400px;
     }
 }
 
