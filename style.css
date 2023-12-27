@@ -4,12 +4,24 @@
     --third-color: #c26124;
 }
 
+.body-no-scroll {
+    overflow: hidden;
+}
+
 html, body {
     margin: 0;
     box-sizing: border-box;
     font-family: "Calibri", sans-serif;
-
 }
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Calibri", sans-serif;
+    height: 100%; /* Make sure the body takes the full height of the viewport */
+    overflow: auto; /* Enable scrolling by default */
+}
+
 
 .location-info a span{
     text-decoration: none;
@@ -181,6 +193,7 @@ header.sticky li a{
         left: -100%;
         top: 0;
         padding-top: 70px;
+        font-size: 2rem;
         z-index: 1;
         gap: 0;
         flex-direction: column;
@@ -190,6 +203,14 @@ header.sticky li a{
         width: 100%;
         text-align: center;
         transition: 0.3s;
+    }
+
+    .nav-menu-phone .nav-items {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: ; */
+        justify-content: space-around;
     }
 
     
@@ -413,6 +434,13 @@ header.sticky li a{
     .icon img {
         height: 5rem;
         fill: black;
+    }
+
+    .info-cell a img{
+        margin: 2rem;
+        width: 80vw;
+
+
     }
     
     .location-info {
@@ -856,6 +884,7 @@ header.sticky li a{
 
     }
     
+    
     .lil-about-us {
         color: white;
         display: flex;
@@ -866,6 +895,8 @@ header.sticky li a{
     
     
     }
+
+
     
     .lil-rightside{
         /* background-image: url(images/castro.jpg);
@@ -958,3 +989,37 @@ header.sticky li a{
     width: 1.5rem;
 
 }
+
+
+.original-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border-bottom: 5px solid #1a796f;
+    transition: 0.3s;
+    background-color: var(--primary-color);
+  }
+  
+  .original-button:hover {
+    border-bottom-width: 0;
+    transform: translateY(5px);
+  }
+
+  .rightSide h2 {
+    font-weight: 800;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px; 
+   -webkit-text-stroke-color: black;
+  }
+   
+   .extras {
+    padding-bottom: 5rem;
+   }

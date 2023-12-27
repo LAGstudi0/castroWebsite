@@ -46,3 +46,26 @@ upBtn.appendChild(icon);
 element.appendChild(upBtn);
 
 document.body.appendChild(element);
+
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu-phone')
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+
+
+    // if (isScrollDisabled) {
+    //     Enable scrolling
+    //     document.body.style.overflow = 'auto';
+    // } else {
+    //     Disable scrolling
+    //     document.body.style.overflow = 'hidden';
+    // }
+
+    // Toggle the scroll state
+    // isScrollDisabled = !isScrollDisabled;
+    // window.document.body.style.overflow === 'hidden' ? window.document.body.style.overflow = 'auto' : window.document.body.style.overflow = 'hidden'
+})

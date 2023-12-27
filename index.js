@@ -1,27 +1,29 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu-phone')
-const aboutUsBtn = document.querySelector('.button');
+const aboutUsBtn = document.querySelector('.original-button');
 
 var isScrollDisabled = false;
-
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 
-
-    // if (isScrollDisabled) {
-    //     Enable scrolling
-    //     document.body.style.overflow = 'auto';
-    // } else {
-    //     Disable scrolling
-    //     document.body.style.overflow = 'hidden';
-    // }
-
     // Toggle the scroll state
-    // isScrollDisabled = !isScrollDisabled;
-    // window.document.body.style.overflow === 'hidden' ? window.document.body.style.overflow = 'auto' : window.document.body.style.overflow = 'hidden'
-})
+    isScrollDisabled = !isScrollDisabled;
+
+    // Disable or enable scrolling based on the scroll state
+    if (isScrollDisabled) {
+        // Disable scrolling
+        console.log('Disabling scrolling');
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+    } else {
+        // Enable scrolling
+        console.log('Enabling scrolling');
+        document.documentElement.style.overflow = 'auto';
+        document.body.style.overflow = 'auto';
+    }
+});
 
 aboutUsBtn.addEventListener('click', function (event) {
     event.preventDefault();
@@ -116,5 +118,5 @@ window.addEventListener('scroll', () => {
 
     // var logo = document.querySelector('.castro-mainLogo');
     // logo.src = 'images/castroLogoWhite.png';
-    header.classList.toggle('sticky', window.scrollY > 1);
+    header.classList.toggle('sticky', window.scrollY > 0);
 });
