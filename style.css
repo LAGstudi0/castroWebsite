@@ -10,7 +10,7 @@
 
 html, body {
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: "Calibri", sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
     font-family: "Calibri", sans-serif;
     height: 100%; /* Make sure the body takes the full height of the viewport */
-    overflow: auto; /* Enable scrolling by default */
+    /* overflow: auto; Enable scrolling by default */
 }
 
 
