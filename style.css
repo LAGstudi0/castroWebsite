@@ -4,6 +4,10 @@
     --third-color: #c26124;
 }
 
+.email-logo{
+    cursor: pointer;
+}
+
 .body-no-scroll {
     overflow: hidden;
 }
@@ -553,7 +557,7 @@ header.sticky li a{
         display: flex;
         flex-direction: column;
         background-image: url('images/main_image.png');
-        background-size:auto;
+        background-size: auto;
         background-repeat: no-repeat;
         background-position: center top -150px;        
     }
