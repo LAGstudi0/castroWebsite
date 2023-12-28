@@ -22,8 +22,7 @@ hamburger.addEventListener('click', () => {
         console.log('Enabling scrolling');
         document.documentElement.style.overflow = 'auto';
         document.body.style.overflow = 'auto';
-        document.documentElement.style.overflowX = 'hidden';
-
+        document.body.style.overflowX = 'hidden';
         
     }
 });
