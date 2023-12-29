@@ -14,7 +14,6 @@
             <div class="left-nav">
                 <ul class="nav-items">
                     <li><a href="menu.html">MENU</a></li>
-                    <li><a href="#">WHO WE ARE</a></li>
                 </ul>
             </div>
             <a href="index.html" class="logo">
@@ -43,30 +42,34 @@
         <div class="nav-menu-phone">
             <ul class="nav-items">
                 <li><a href="menu.html">MENU</a></li>
-                <li><a href="#">ABOUT US</a></li>
                 <li><a href="https://www.instagram.com/castros_liverpool/?hl=en-gb">GALLERY</a></li>
                 <li><a href="#">CONTACT US</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="banner">
-        <img src="images/castroPadronPepper.png" alt="">
-    </div>
-
     <div class="main-screen">
-        <h1>Send us an email</h1>
-        <form action="https://formspree.io/f/mjvnbnkw" method="post">
-            <input type="text" name="Name" placeholder="Full Name" required>
-            <input type="email" name="Email" placeholder="Email" required>
-            <textarea name="Message" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="text-forForm">
+            <h3>DO YOU WANT US TO CATER FOR YOU</h3>
+            <h1>GIVE US A MESSAGE</h1>
+            <p>If you have a party or an event where you want us to cater, we can do it!</p>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mjvnbnkw" method="post">
+                <label for="Name">Full Name *</label>
+                <input type="text" name="Name" required>
+                <label for="Email">Email *</label>
+                <input type="email" name="Email" required>
+                <label for="Message">Message *</label>
+                <textarea class="messageText" name="Message" required></textarea>
+                <button class="original-button" type="submit">SUBMIT</button>
+            </form>
+        </div>
     </div>
 
 
 
-        <footer>
+    <footer>
         <div class="main-footer-content">
                     <div class="footer-left-side">
                         <div class="footer-title">
@@ -89,7 +92,8 @@
                                 <!-- <img src="images/happy pineapple.png" alt=""> -->
                                 <div class="footer-social-media">
                                     <a href="https://www.instagram.com/castros_liverpool/"><img src="images/instagram.svg" alt="" class="footer-social-logo"></a>
-                                    <img onclick="alert('the email is castro8ba@gmail.com')" src="images/mail.svg" alt="" class="footer-social-logo">
+                                    <img class="email-logo" onclick="alert('the email is castro8ba@gmail.com')" src="images/mail.svg" alt="" class="footer-social-logo">
+                                    <a href="https://www.facebook.com/profile.php?id=100089406662436"><img src="images/facebookLogo.svg" alt=""></a>
                                     <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d26167431-Reviews-Castro_s_Cafetera-Liverpool_Merseyside_England.html"><img src="images/tripadvisor.svg" alt="" class="footer-social-logo"></a>
                                 </div>
                             </div>
@@ -100,7 +104,8 @@
                         <!-- <img src="images/happy pineapple.png" alt=""> -->
                         <div class="footer-social-media">
                             <a href="https://www.instagram.com/castros_liverpool/"><img src="images/instagram.svg" alt="" class="footer-social-logo"></a>
-                            <img onclick="alert('the email is castro8ba@gmail.com')" src="images/mail.svg" alt="" class="footer-social-logo">
+                            <img class="email-logo" onclick="alert('the email is castro8ba@gmail.com')" src="images/mail.svg" alt="" class="footer-social-logo">
+                            <a href="https://www.facebook.com/profile.php?id=100089406662436"><img src="images/facebookLogo.svg" alt=""></a>
                             <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d26167431-Reviews-Castro_s_Cafetera-Liverpool_Merseyside_England.html"><img src="images/tripadvisor.svg" alt="" class="footer-social-logo"></a>
                         </div>
                     </div>

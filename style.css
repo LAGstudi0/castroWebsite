@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.top-right-nav .nav-items, .left-nav .nav-items {
+    width: 15rem;
+}
+
 .body-no-scroll {
     overflow: hidden;
 }
@@ -234,7 +238,7 @@ header.sticky li a{
     }
 
     .nav-items li a:hover {
-        color: var(--primary-color);
+        color: black;
     }
     
     .nav-menu-phone.active {
@@ -587,7 +591,7 @@ header.sticky li a{
     }
 
     .nav-items li a:hover {
-        color: var(--primary-color);
+        color: black;
     }
 
     .nav-items li a {
