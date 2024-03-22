@@ -138,5 +138,55 @@ const observer = new IntersectionObserver((entries) => {
     }));
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+// const hiddenElements = document.querySelectorAll('.hidden');
+// hiddenElements.forEach((el) => observer.observe(el));
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const backgrounds = ['url(images/main_image.png)', 'url(images/main_image2.JPG)'];
+//     const backgroundElement = document.querySelector('.background-image');
+//     let currentIndex = 0;
+
+//     function changeBackground() {
+//         // Apply blur before changing the background image
+//         backgroundElement.style.filter = 'blur(5px)';
+        
+//         setTimeout(() => {
+//             currentIndex = (currentIndex + 1) % backgrounds.length;
+//             backgroundElement.style.backgroundImage = backgrounds[currentIndex];
+//             // Remove blur after a slight delay to allow for image load
+//             setTimeout(() => {
+//                 backgroundElement.style.filter = 'blur(0px)';
+//             }, 300); // This delay should be enough for the image to "load" under the blur
+//         }, 500); // This is the delay before the new background starts loading
+//     }
+
+//     // Call the function periodically to change the background
+//     setInterval(changeBackground, 5000); // Increase interval to allow for full transition
+// });
+
+
+
+
+let headerBackground = document.querySelectorAll('.background');
+
+let imageIndex = 0;
+
+function changeBackground() {
+    //remove showing class from image 
+    headerBackground[imageIndex].classList.remove('showing');
+
+    //increment value of index
+    imageIndex++;
+
+    // if an image index is more than the number of elements reset to 0
+    if(imageIndex >= headerBackground.length) {
+        imageIndex = 0;
+    }
+
+    //add the showing class to the next element
+    headerBackground[imageIndex].classList.add('showing');
+    
+}
+
+setInterval(changeBackground, 3000);
