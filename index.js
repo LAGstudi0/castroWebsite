@@ -123,10 +123,9 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+// this is for the animation of the menu
 
-// this is for the animation
-
-const observer = new IntersectionObserver((entries) => {
+const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry => {
         console.log(entry);
         if (entry.isIntersecting) {
@@ -137,6 +136,9 @@ const observer = new IntersectionObserver((entries) => {
         }
     }));
 });
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer2.observe(el));
 
 // const hiddenElements = document.querySelectorAll('.hidden');
 // hiddenElements.forEach((el) => observer.observe(el));
@@ -164,6 +166,7 @@ const observer = new IntersectionObserver((entries) => {
 //     // Call the function periodically to change the background
 //     setInterval(changeBackground, 5000); // Increase interval to allow for full transition
 // });
+
 
 
 
