@@ -162,12 +162,39 @@ transform: translateX(0);
         height: 100vh;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column;
         background-image: url('images/main_image.png');
         background-size: auto;
         background-repeat: no-repeat;
-        background-position: center left -650px;
+        background-position: center left -650px; */
 
+    }
+
+    .background-container {
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%;
+        min-height: 100vh;
+        z-index: -5;
+        /* background-image: url('images/main_image.png'); */
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;    */
+    }
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .showing {
+        opacity: 1;
+        z-index: -1;
+        transition: none;
     }
     
     .left-nav {
