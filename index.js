@@ -27,15 +27,15 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-aboutUsBtn.addEventListener('click', function (event) {
-    event.preventDefault();
+// aboutUsBtn.addEventListener('click', function (event) {
+//     event.preventDefault();
 
-    // Smooth scroll to the top of the page
-    window.scrollTo({
-        top: document.getElementById('aboutUs').offsetTop - 100, // Replace with the actual ID of the target element
-        behavior: 'smooth'
-    });
-});
+//     // Smooth scroll to the top of the page
+//     window.scrollTo({
+//         top: document.getElementById('aboutUs').offsetTop - 100, // Replace with the actual ID of the target element
+//         behavior: 'smooth'
+//     });
+// });
 
 
 

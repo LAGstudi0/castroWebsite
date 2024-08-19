@@ -3,9 +3,16 @@
     --secondary-color:#d86b27;
     --third-color: #c26124;
 }
-
+@font-face {
+    font-family: vinylFont;
+    src: url('Lobster/Lobster-Regular.ttf');
+}
 .email-logo{
     cursor: pointer;
+}
+
+#nice-font {
+    font-family: vinylFont;
 }
 
 .top-right-nav .nav-items, .left-nav .nav-items {
@@ -1136,9 +1143,9 @@ transform: translateX(0);
 
   .rightSide h2 {
     font-weight: 800;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    /* -webkit-text-fill-color: white; 
     -webkit-text-stroke-width: 0.5px; 
-   -webkit-text-stroke-color: black;
+   -webkit-text-stroke-color: black; */
   }
    
    .extras {
