@@ -8,12 +8,18 @@
     font-family: vinylFont;
     src: url('Lobster/Lobster-Regular.ttf');
 }
+
+@font-face {
+    font-family: vinylFont2;
+    src: url('Satisfy/Satisfy/Satisfy-Regular.ttf');
+}
+
 .email-logo{
     cursor: pointer;
 }
 
 #nice-font {
-    font-family: vinylFont;
+    font-family: vinylFont2;
 }
 
 .top-right-nav .nav-items, .left-nav .nav-items {
