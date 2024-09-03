@@ -1168,3 +1168,10 @@ transform: translateX(0);
    .extras {
     padding-bottom: 5rem;
    }
+
+
+   .info-cater-bold {
+    color: var(--white-text);
+    font-weight: bold;
+    font-size: 1rem;
+   }
