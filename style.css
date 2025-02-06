@@ -172,6 +172,7 @@ transform: translateX(0);
     .info-cell a img {
         width: 100%;
     }
+
     main {
         color: var(--white-text);
         height: 100vh;
